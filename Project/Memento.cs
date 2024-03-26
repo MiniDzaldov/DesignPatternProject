@@ -8,7 +8,7 @@ namespace Project;
 
 public class Memento : IMemento
 {
-    IMemento IMemento.Commit(MyFile file)
+    public IMemento Commit(MyFile file)
     {
         throw new NotImplementedException();
     }
