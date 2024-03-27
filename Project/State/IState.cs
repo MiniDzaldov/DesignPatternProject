@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Project.FolderItem;
 
-namespace Project;
+namespace Project.State;
 
-public interface ISystemFile
+public interface IState
 {
-    public void Merge();
-    public void Commit();
+    public void ChangeState(SystemFile file);
 }
